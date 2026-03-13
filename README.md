@@ -2,3 +2,11 @@ Notes for studying:
 - How to code pneumatics
 - How to code drivetrain
 - How to read from rotation sensor
+- set all the motor variables 3 for left drivetrain (11 watt), 3 (11 watt) for right drivetrain (6:1)
+- ⁠⁠set 4 motors for 5.5 watts (no ratio)
+- ⁠⁠find out how to get data for inertial sensor
+- ⁠⁠find out how to replicate control for the driving
+- ⁠⁠set buttons for 4 of the 5.5 watts,
+- set 1 button for the lifting and descending of the pneumatic arms A
+- ⁠⁠Set another pneumatic B for the lifting and descending of the mechanism for the tube balls
+- Set a pneumatic C, for the switching between top & middle control zones
