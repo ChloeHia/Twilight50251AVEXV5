@@ -10,3 +10,4 @@ Notes for studying:
 - set 1 button for the lifting and descending of the pneumatic arms A ✅
 - ⁠⁠Set another pneumatic B for the lifting and descending of the mechanism for the tube balls ✅
 - Set a pneumatic C, for the switching between top & middle control zones ✅
+- test
