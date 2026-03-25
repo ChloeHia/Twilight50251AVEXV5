@@ -8,6 +8,7 @@
 /*----------------------------------------------------------------------------*/
 
 #include "vex.h"
+#include <robot-config.h>
 
 using namespace vex;
 
@@ -25,6 +26,8 @@ competition Competition;
 /*  function is only called once after the V5 has been powered on and        */
 /*  not every time that the robot is disabled.                               */
 /*---------------------------------------------------------------------------*/
+
+
 
 void pre_auton(void) {
 
@@ -61,6 +64,9 @@ void autonomous(void) {
 void usercontrol(void) {
   // User control code here, inside the loop
   while (1) {
+    // Inside usercontrol loop
+    drivetrainright.spin(forward, Controller1.Axis3.position(), percent);
+
     // This is the main execution loop for the user control program.
     // Each time through the loop your program should update motor + servo
     // values based on feedback from the joysticks.
@@ -68,12 +74,16 @@ void usercontrol(void) {
     // ........................................................................
     // Insert user code here. This is where you use the joystick values to
     // update your motors, etc.
-    // ........................................................................
+    // .......................................................................
+
+ 
 
     wait(20, msec); // Sleep the task for a short amount of time to
                     // prevent wasted resources.
   }
 }
+
+
 
 //
 // Main will set up the competition functions and callbacks.
@@ -83,6 +93,8 @@ int main() {
   Competition.autonomous(autonomous);
   Competition.drivercontrol(usercontrol);
 
+
+  
   // Run the pre-autonomous function.
   pre_auton();
 
