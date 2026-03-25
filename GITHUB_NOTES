@@ -1,0 +1,4 @@
+Adding and updating files:
+1. git add file_path
+2. git commit -m "notes to tell readers"
+3. git push
